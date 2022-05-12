@@ -232,7 +232,7 @@ find_values(cur_points,cur_no_of_points)
 {
   int i,j;
 
-  if (coeff_modified == FALSE) return;
+  if (coeff_modified == FALSE) return NULL;
   for (i=1;i<=cur_no_of_points;i++)
     {
       cur_points[i]->val = coeff_array[no_of_dimensions+1];
