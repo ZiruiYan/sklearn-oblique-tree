@@ -380,7 +380,7 @@ write_subtree(cur_node,dtree)
      struct tree_node *cur_node;
      FILE *dtree;
 {
-  if (cur_node == NULL) return;
+  if (cur_node == NULL) return NULL;
   
   write_hp(cur_node,dtree);
   write_subtree(cur_node->left,dtree);
