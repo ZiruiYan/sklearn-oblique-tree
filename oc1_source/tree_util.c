@@ -126,7 +126,7 @@ read_subtree(root,dtree)
 	}
       else
 	cur_node = read_hp(dtree);
-      if (cur_node == NULL) return;
+      if (cur_node == NULL) return NULL;
     }
 
   if (isrightchild(cur_node,root))
