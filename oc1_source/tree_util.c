@@ -408,7 +408,7 @@ write_hp(cur_node,dtree)
 {
   int i;
   
-  if (dtree == NULL) return;
+  if (dtree == NULL) return NULL;
   
   if (strcmp(cur_node->label,"\0") == 0)
     fprintf(dtree, "Root Hyperplane: ");
@@ -452,7 +452,7 @@ write_header(dtree)
   extern int no_of_dimensions,no_of_categories;
   extern char train_data[LINESIZE];
   
-  if (dtree == NULL) return;
+  if (dtree == NULL) return NULL;
   
   fprintf(dtree,"Training set: %s, ",train_data);
   fprintf(dtree,"Dimensions: %d, Categories: %d\n",
